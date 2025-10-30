@@ -33,6 +33,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- add if missing -->
+    <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.56.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+    <!-- if you have a shared/domain project with User model, add ProjectReference -->
+    <!-- <ProjectReference Include="..\UserManagement.Domain\UserManagement.Domain.csproj" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
     <Protobuf Include="Protos/user.proto" GrpcServices="Server" />
   </ItemGroup>
 

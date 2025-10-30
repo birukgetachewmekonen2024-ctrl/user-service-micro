@@ -1,0 +1,16 @@
+The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
+      The application 'build' does not exist.
+  * You intended to execute a .NET SDK command:
+      A compatible .NET SDK was not found.
+
+Requested SDK version: 7.0.100
+global.json file: /workspaces/user-service-micro/user-management-microservice/global.json
+
+Installed SDKs:
+
+Install the [7.0.100] .NET SDK or update [/workspaces/user-service-micro/user-management-microservice/global.json] to match an installed SDK.
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found
+8.0.412 [/usr/share/dotnet/sdk]

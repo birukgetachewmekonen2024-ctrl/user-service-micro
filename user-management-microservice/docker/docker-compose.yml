@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  user-management-service:
+    build:
+      context: ../src/UserManagement.Service
+      dockerfile: ../../docker/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=User Id=<your_user>;Password=<your_password>;Data Source=<your_data_source>; 
+    depends_on:
+      - oracle-db
+
+  oracle-db:
+    image: oracle/database:19.3.0-ee
+    environment:
+      - ORACLE_PWD=<your_oracle_password>
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+
+volumes:
+  oracle-data:
