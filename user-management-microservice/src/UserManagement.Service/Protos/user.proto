@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserManagement.Service.Protos";
+
+package user;
+
+// The UserManagement service definition.
+service UserService {
+    // RPC method for user registration
+    rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse);
+    
+    // RPC method for user login
+    rpc LoginUser(LoginUserRequest) returns (LoginUserResponse);
+    
+    // RPC method for retrieving user information
+    rpc GetUserInfo(GetUserInfoRequest) returns (GetUserInfoResponse);
+}
+
+// Message for user registration request
+message RegisterUserRequest {
+    string username = 1;
+    string password = 2;
+    string email = 3;
+}
+
+// Message for user registration response
+message RegisterUserResponse {
+    string message = 1;
+    bool success = 2;
+}
+
+// Message for user login request
+message LoginUserRequest {
+    string username = 1;
+    string password = 2;
+}
+
+// Message for user login response
+message LoginUserResponse {
+    string token = 1;
+    string message = 2;
+    bool success = 3;
+}
+
+// Message for getting user information request
+message GetUserInfoRequest {
+    string username = 1;
+}
+
+// Message for user information response
+message GetUserInfoResponse {
+    string username = 1;
+    string email = 2;
+    string message = 3;
+}
+
+// Message for user information
+message UserMessage {
+    string id = 1;
+    string username = 2;
+    string email = 3;
+    string phoneNumber = 4;
+    bool isActive = 5;
+    string createdAt = 6;
+}

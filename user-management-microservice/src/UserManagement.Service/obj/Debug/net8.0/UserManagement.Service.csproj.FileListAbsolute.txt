@@ -1,0 +1,7 @@
+/workspaces/user-service-micro/user-management-microservice/src/UserManagement.Service/obj/Debug/net8.0/UserManagement.Service.csproj.AssemblyReference.cache
+/workspaces/user-service-micro/user-management-microservice/src/UserManagement.Service/obj/Debug/net8.0/UserManagement.Service.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/user-service-micro/user-management-microservice/src/UserManagement.Service/obj/Debug/net8.0/UserManagement.Service.AssemblyInfoInputs.cache
+/workspaces/user-service-micro/user-management-microservice/src/UserManagement.Service/obj/Debug/net8.0/UserManagement.Service.AssemblyInfo.cs
+/workspaces/user-service-micro/user-management-microservice/src/UserManagement.Service/obj/Debug/net8.0/UserManagement.Service.csproj.CoreCompileInputs.cache
+/workspaces/user-service-micro/user-management-microservice/src/UserManagement.Service/obj/Debug/net8.0/UserManagement.Service.MvcApplicationPartsAssemblyInfo.cache
+/workspaces/user-service-micro/user-management-microservice/src/UserManagement.Service/obj/Debug/net8.0/UserManagement.Service.sourcelink.json

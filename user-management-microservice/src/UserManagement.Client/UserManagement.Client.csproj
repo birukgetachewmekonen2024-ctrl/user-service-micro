@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyName>UserManagement.Client</AssemblyName>
+    <RootNamespace>UserManagement.Client</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Net.Client" Version="2.45.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.21.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.45.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Update="Serilog" />
+    <PackageReference Update="Serilog.Extensions.Logging" />
+    <PackageReference Update="Serilog.Sinks.Console" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos/user.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+</Project>
